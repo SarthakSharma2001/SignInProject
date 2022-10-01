@@ -1,0 +1,21 @@
+{
+  "name": "sign-in-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "sarthak",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.18.1",
+    "is-empty": "^1.2.0",
+    "mongoose": "^6.6.3",
+    "request": "^2.88.2",
+    "validator": "^13.7.0"
+  }
+}
