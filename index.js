@@ -14,7 +14,7 @@ const User = require("./models/UserSchema");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const PORT = 3000;
+const DEFAULT_PORT = 3000;
 
 const dbURL = "mongodb://localhost:27017/SignInProject";
 
@@ -76,6 +76,7 @@ app.post("/login-validator", (req, res) => {
   });
 });
 
+const PORT = process.env.PORT || DEFAULT_PORT;
 app.listen(PORT, () => {
   console.log("listening at localhost:" + PORT);
 });
